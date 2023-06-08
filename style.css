@@ -1,0 +1,29 @@
+.nav-item{
+    margin-right: 30px;
+}
+
+.offer-text{
+    width: 50%;
+    color: grey;
+    font-weight:350;
+}
+
+div.btn{
+    padding: 9px 15px 9px 15px;
+    margin-bottom: 4px;
+    border: 2px solid rgb(97, 97, 255);
+}
+div.btn.btn-transparent{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+

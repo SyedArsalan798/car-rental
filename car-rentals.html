@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Car Rentals</title>
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-center">
+            <div class="navbar-brand" style="margin-left: 16px;">
+                FAST Tours and Travels
+            </div>
+
+            <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="margin-left: auto;">
+                  <li class="nav-item">
+                    <a style="color: white;" class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="color: white;" class="nav-link" href="tour-packages.html">Package Tours</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="color: white;" class="nav-link" href="car-rentals.html">Car Rentals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="color: white;" class="nav-link" href="infodesk.html">Information Desk</a>
+                  </li>
+                </ul>
+              </div>
+
+        </nav>
+        <nav class="navbar navbar-expand-fluid navbar-dark text-start">
+
+            <button class="navbar-toggler text-white px-4 bg-primary" data-toggle="collapse" data-target="#chooseCar" style="border: 2px solid blue; border-radius: 0; padding: 10px; margin-left: 20px; ">
+                <span>Filter Car</span>
+            </button>
+    
+            <div class="collapse navbar-collapse shadow-sm" id="chooseCar" style="background-color: rgb(241, 241, 241); margin: 20px;">
+                <div class="container" style="margin-top: 10px; padding: 30px;">
+                    <h5 class="text-muted">Choose Your Desired Car</h5>
+                    <form>
+                      <div class="row mb-2">
+                        
+                        <div class="col-md-4 mb-2">
+                          <select class="form-select" id="modelSelect">
+                            <option selected>Select a model</option>
+                            <option value="honda">Honda</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="tata">Tata</option>
+                            <option value="maruti">Maruti</option>
+                            <option value="toyota">Toyota</option>
+                          </select>
+                        </div>
+                      
+                      
+                        
+                        <div class="col-md-4">
+                          <select class="form-select" id="typeSelect">
+                            <option selected>Select a type</option>
+                            <option value="small">Small</option>
+                            <option value="full">Full</option>
+                            <option value="luxury">Luxury</option>
+                            <option value="minivan">Minivan</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row mb-2">
+                        <div class="col-md-8">
+                          <input type="number" class="form-control" id="seatingCapacity" placeholder="Seating Capacity" min="2" max="5">
+                        </div>
+                      </div>
+    
+                    <div class="row">
+                        <label for="pickupDate" class="col-md-2 col-form-label mb-2">Pick-up Date</label>
+                        <div class="col-md-6">
+                        <input type="date" class="form-control" id="pickupDate">
+                        </div>
+                    </div>
+    
+                  <div class="row">
+                    <label for="dropoffDate" class="col-md-2 col-form-label">Drop-off Date</label>
+                    <div class="col-md-6">
+                      <input type="date" class="form-control" id="dropoffDate">
+                    </div>
+                  </div>
+                  
+    
+                  <div class="row mb-3">
+                    <label for="driverCheckbox" class="col-md-3 col-form-label">Driver Required</label>
+                    <div class="col-md-9">
+                      <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" id="driverCheckbox">
+                      </div>
+                    </div>
+                  
+                    <label for="acCheckbox" class="col-md-3 col-form-label">Air Conditioner Required</label>
+                    <div class="col-md-9">
+                      <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" id="acCheckbox">
+                    </div>
+                </div>
+              </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <button type="submit" class="shadow-sm btn btn-primary px-4" style="border-radius: 0;">Filter</button>
+                    </div>
+                  </div>
+                </form>
+                
+              </div>
+              </div>
+    
+        </nav>
+    </header>
+
+
+
+    <div class="rentals container text-center">
+        <h1 style="font-weight: lighter;" class="container mt-5 mb-4">Car Rentals</h1>
+        <div class="row row-cols-3">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/benz.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title text-start">
+                            <h5 style="font-weight:400;">White Mercedes Benz</h5>
+                        </div>
+                        <div class="small card-text text-start text-muted">
+                            <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;890/day </h5>
+                        </div>
+                    </div>
+                    <a href="#" class="card-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#rentbenz">
+                        <div class="card-footer bg-white">
+                            <h6>View Details</h6>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="modal fade" id="rentbenz" tabindex="-1" aria-labelledby="Rent" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">White Mercedes Benz</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-start">
+                    <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;890/day </h5>
+                    <p class="text-muted" style="font-weight: 350; margin-top: -7px;">Per Person </p>
+                    <p>The White Mercedes Benz is a sleek and stylish sedan, perfect for business or leisure travel. It can accommodate up to 4 passengers comfortably and is equipped with air conditioning to ensure a comfortable ride. A driver is required to operate the vehicle. Please provide a specific pick-up date and drop-off date for rental.</p>
+                    
+                    <h5 class="text-muted">Specs and Features:</h5>
+                    <ul>
+                      <li>Model: Mercedes Benz</li>
+                      <li>Type: Sedan</li>
+                      <li>Seating Capacity: 4 passengers</li>
+                      <li>Driver required: Yes</li>
+                      <li>Air-conditional: Yes</li>
+                      <li>Pick-up date: Today</li>
+                      <li>Drop-off date: Tomorrow</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <a type="button" class="btn btn-primary" href="bookCars.html">Book Ticket</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/audi.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title text-start">
+                            <h5 style="font-weight:400;">Blue Audi Sedan</h5>
+                        </div>
+                        <div class="small card-text text-start text-muted">
+                            <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;840/day </h5>
+                        </div>
+                    </div>
+                    <a href="#" class="card-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#rentaudi">
+                        <div class="card-footer bg-white">
+                            <h6>Rent this Car</h6>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="modal fade" id="rentaudi" tabindex="-1" aria-labelledby="Rent" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Blue Audi Sedan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-start">
+                    <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;840/day </h5>
+                    <p class="text-muted" style="font-weight: 350; margin-top: -7px;">Per Person </p>
+                    <p>The Blue Audi Sedan is a stylish and luxurious vehicle, perfect for both business and leisure travel. It can accommodate up to 4 passengers comfortably and is equipped with air conditioning to ensure a comfortable ride. A driver is required to operate the vehicle. Please provide a specific pick-up date and drop-off date for rental.</p>
+                    <h5 class="text-muted">Specs and Features:</h5>
+                    <ul>
+                        <li>Model: Audi Sedan</li>
+                        <li>Type: Sedan</li>
+                        <li>Seating Capacity: 4 passengers</li>
+                        <li>Driver required: Yes</li>
+                        <li>Air-conditioning: Yes</li>
+                        <li>Pick-up date: Today</li>
+                        <li>Drop-off date: Tomorrow</li>
+                    </ul>
+          
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <a type="button" class="btn btn-primary" href="bookCars.html">Book Ticket</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="images/rangerover.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title text-start">
+                            <h5 style="font-weight:400;">White Range Rover Suv</h5>
+                        </div>
+                        <div class="small card-text text-start text-muted">
+                            <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;540/day</h5>
+                        </div>
+                    </div>
+                    <a href="#" class="card-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#rentrover">
+                        <div class="card-footer bg-white">
+                            <h6>Rent this Car</h6>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="modal fade" id="rentrover" tabindex="-1" aria-labelledby="Rent" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">White Range Rover Suv</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-start">
+                    <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;540/day </h5>
+                    <p class="text-muted" style="font-weight: 350; margin-top: -7px;">Per Person </p>
+                    <p>The White Range Rover SUV is a spacious and luxurious vehicle, perfect for both on-road and off-road adventures. It can accommodate up to 5 passengers comfortably and is equipped with air conditioning to ensure a comfortable ride. A driver is optional depending on the rental company's policy. Please provide a specific pick-up date and drop-off date for rental.</p>
+                    <h5 class="text-muted">Specs and Features:</h5>
+                    <ul>
+                        <li>Model: Range Rover</li>
+                        <li>Type: SUV</li>
+                        <li>Seating Capacity: 5 passengers</li>
+                        <li>Driver required: Yes</li>
+                        <li>Air-conditioning: Yes</li>
+                        <li>Pick-up date: Today</li>
+                        <li>Drop-off date: Tomorrow</li>
+                    </ul>
+          
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <a type="button" class="btn btn-primary" href="bookCars.html">Book Ticket</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div style="margin-top: 12%;"></div>
+    <footer class="container-fluid text-center p-2 pt-3 bg-light fixed-bottom">
+        <p>&copy;Copyright <b>Fast Tours and Travels</b>, 2023. All rights Reserved.</p>
+
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

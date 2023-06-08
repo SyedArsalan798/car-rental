@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Information Desk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-center">
+            <div class="navbar-brand" style="margin-left: 16px;">
+                FAST Tours and Travels
+            </div>
+
+            <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="margin-left: auto;">
+                  <li class="nav-item">
+                    <a style="color: white;" class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="color: white;" class="nav-link" href="tour-packages.html">Package Tours</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a style="color: white;" class="nav-link" href="car-rentals.html">Car Rentals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="color: white;" class="nav-link" href="infodesk.html">Information Desk</a>
+                  </li>
+                </ul>
+              </div>
+
+        </nav>
+    </header>
+    <section id="hotels" class="py-5">
+        <div class="container">
+            <h1 style="font-weight: lighter;" class="text-center mt-3 mb-4">Search Hotels</h1>
+            <form>
+                <div class="mb-1 row gx-1 align-items-end justify-content-center">
+                    <div class="col-md-4">
+                        <input class="form-control py-3" list="datalistOptions" id="exampleDataList" placeholder="Where are you finding hotels?" style="border-radius: 0px;">
+                        <datalist id="datalistOptions">
+                            <option value="Karachi">
+                            <option value="Lahore">
+                            <option value="Peshawar">
+                            <option value="Islamabad">
+                            <option value="Murree">
+                        </datalist>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="checkin">Check-in</label>
+                        <input id="checkin" class="form-control py-3" type="date" style="border-radius: 0px;">
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <label for="checkout">Check-out</label>
+                        <input id="checkout" class="form-control py-3" type="date" style="border-radius: 0px;">
+                        
+                    </div>
+                    <div class="col-md-2 mt-1 ">
+                        <input type="submit" class="btn btn-primary py-3 px-4" value="Search" style="border-radius: 0px;">
+                        
+                    </div>
+
+                </div>
+                <div class="mb-3 row justify-content-start">
+                    
+                    <div class="col-md-11 col-lg-3">
+                        <select class="form-select py-3" id="price-range" style="border-radius: 0px;" >
+                            <option selected>Price Range</option>
+                            <option>$50 - $100</option>
+                            <option>$100 - $200</option>
+                            <option>$200 - $500</option>
+                            <option>More than $500</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </form>
+            <div class="mt-3 row row-cols-md-3 g-4">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/cliftonHotel.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-start">
+                                <h5 style="font-weight:400;">Hamsun Clifton</h5>
+                            </div>
+                            <div class="small card-text text-start text-muted" style="margin-top: -7px;">
+                                <p class="text-muted">Clifton, Karachi</p>
+                                <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;890/night</h5>
+                            </div>
+                        </div>
+                        <a href="#" class="card-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#cliftonhotel">
+                            <div class="card-footer bg-white text-center">
+                                <h6>View Details</h6>
+                            </div>
+                        </a>
+    
+                    </div>
+                </div>
+
+                <div class="modal fade" id="cliftonhotel" tabindex="-1" aria-labelledby="Rent" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Hamsun Clifton</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start">
+                          <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;890/night </h5>
+                          <p class="text-muted" style="font-weight: 350; margin-top: -7px;">Family based</p>
+                          <p>Hamsun Clifton is a 3-star property located in Karachi. Featuring room service, this property also provides guests with a terrace. The hotel features family rooms.
+                            </p><p>
+                            At the hotel each room has air conditioning, a closet, a flat-screen TV, a private bathroom, bed linen, towels and a balcony with a city view. All rooms come with an electric tea pot, while selected rooms come with a kitchenette with a fridge, a microwave and a toaster. At Hamsun Clifton the rooms have a seating area.
+                            
+                            Guests at the accommodation can enjoy a halal breakfast.
+                            
+                            The nearest airport is Jinnah International Airport, 19.3 km from Hamsun Clifton.</p>
+                            <h5 class="text-muted">Location:</h5>
+                            <p>520 Gulf towners, Main Teen Talwar, Block 8 Cliton, Karachi, Clifton, 75400 Karachi, Pakistan</p>
+                            <h5 class="text-muted">Breakfast:</h5>
+                            <p>Delicious Halal Food</p>
+                          <h5 class="text-muted">Facilities and Features:</h5>
+                          <ul>
+                            <li>Room service</li>
+                            <li>Non-smoking rooms</li>
+                            <li>Free parking</li>
+                            <li>Family rooms</li>
+                            <li>Breakfast</li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/excelsiorHotel.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-start">
+                                <h5 style="font-weight:400;">Hotel Excelsior Karachi</h5>
+                            </div>
+                            <div class="small card-text text-start text-muted" style="margin-top: -7px;">
+                                <p class="text-muted">Saddar, Karachi</p>
+                                <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;129/night</h5>
+                            </div>
+                        </div>
+                        <a href="#" class="card-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#saddarhotel">
+                            <div class="card-footer bg-white text-center">
+                                <h6>View Details</h6>
+                            </div>
+                        </a>
+    
+                    </div>
+                </div>
+
+                <div class="modal fade" id="saddarhotel" tabindex="-1" aria-labelledby="Rent" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Hotel Excelsior Karachi</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start">
+                          <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;129/night </h5>
+                          <p class="text-muted" style="font-weight: 350; margin-top: -7px;">Family based</p>
+                          <p>Hotel Excelsior Karachi is a 4-star property located in Karachi. Among the facilities of this property are a restaurant, room service and a 24-hour front desk, along with free WiFi. The property has a concierge service, a tour desk and currency exchange for guests.
+                            </p>
+                            <p>
+                                The hotel will provide guests with air-conditioned rooms offering a desk, an electric tea pot, a fridge, a minibar, a safety deposit box, a flat-screen TV and a private bathroom with a shower. At Hotel Excelsior Karachi rooms include bed linen and towels.
+                            </p>
+
+                            <h5 class="text-muted">Location:</h5>
+                            <p>Sarwar Shaheed Road, Saddar Town, 75600 Karachi, Pakistan</p>
+                            <h5 class="text-muted">Breakfast:</h5>
+                            <p>Continental, Halal, Asian, American, Buffet</p>
+                          <h5 class="text-muted">Facilities and Features:</h5>
+                          <ul>
+                            <li>Room service</li>
+                            <li>Free WiFi</li>
+                            <li>Restaurant</li>
+                            <li>Non-smoking rooms</li>
+                            <li>Free parking</li>
+                            <li>Facilities for disabled guests</li>
+                            <li>Family rooms</li>
+                            <li>Tea/Coffee Maker in All Rooms</li>
+                            <li>Good Breakfast</li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/boutiqHotel.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title text-start">
+                                <h5 style="font-weight:400;">The Reserve Botique Hotel</h5>
+                            </div>
+                            <div class="small card-text text-start text-muted" style="margin-top: -7px;">
+                                <p class="text-muted">Karachi</p>
+                                <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;1000/night</h5>
+                            </div>
+                        </div>
+                        <a href="#" class="card-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#botihotel">
+                            <div class="card-footer bg-white text-center">
+                                <h6>View Details</h6>
+                            </div>
+                        </a>
+    
+                    </div>
+                </div>
+
+                <div class="modal fade" id="botihotel" tabindex="-1" aria-labelledby="Rent" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">The Reserve Boutique Hotel</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start">
+                          <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;1000/night </h5>
+                          <p class="text-muted" style="font-weight: 350; margin-top: -7px;">Family based</p>
+                          <p>The Reserve Boutique Hotel is a 3-star property located in Karachi. Featuring room service, this property also provides guests with a terrace. The hotel features family rooms.
+                            </p><p>
+                            At the hotel each room has air conditioning, a closet, a flat-screen TV, a private bathroom, bed linen, towels and a balcony with a city view. All rooms come with an electric tea pot, while selected rooms come with a kitchenette with a fridge, a microwave and a toaster. At Hamsun Clifton the rooms have a seating area.
+                            
+                            Guests at the accommodation can enjoy a halal breakfast.
+                            
+                            The nearest airport is Jinnah International Airport, 19.3 km from Reserve Boutique Hotel.</p>
+                            <h5 class="text-muted">Location:</h5>
+                            <p>520 Gulf towners, Main Teen Talwar, Block 8 Cliton, Karachi, Clifton, 75400 Karachi, Pakistan</p>
+                            <h5 class="text-muted">Breakfast:</h5>
+                            <p>Delicious Halal Food</p>
+                          <h5 class="text-muted">Facilities and Features:</h5>
+                          <ul>
+                            <li>Room service</li>
+                            <li>Free WiFi</li>
+                            <li>Restaurant</li>
+                            <li>Non-smoking rooms</li>
+                            <li>Free parking</li>
+                            <li>Facilities for disabled guests</li>
+                            <li>Family rooms</li>
+                            <li>Tea/Coffee Maker in All Rooms</li>
+                            <li>Good Breakfast</li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+        <section id="flights" class="py-5">
+            <div class="container">
+                <h1 style="font-weight: lighter;" class="text-center mt-5 mb-4">Search Flights</h1>
+
+                <form>
+                    <div class="mb-1 row gx-1 align-items-end justify-content-center">
+                        <div class="col-md-3">
+                            <input class="form-control py-3" list="datalistOptions" id="exampleDataList" placeholder="Flying from?" style="border-radius: 0px;">
+                            <datalist id="datalistOptions">
+                                <option value="Karachi">
+                                <option value="Lahore">
+                                <option value="Peshawar">
+                                <option value="Islamabad">
+                                <option value="Murree">
+                            </datalist>
+                        </div>
+                        <div class="col-md-3">
+                            <input class="form-control py-3" list="datalistOptions" id="exampleDataList" placeholder="Flying To?" style="border-radius: 0px;">
+                            <datalist id="datalistOptions">
+                                <option value="Karachi">
+                                <option value="Lahore">
+                                <option value="Peshawar">
+                                <option value="Islamabad">
+                                <option value="Murree">
+                            </datalist>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="checkin">Departing</label>
+                            <input id="checkin" class="form-control py-3" type="date" style="border-radius: 0px;">
+                            
+                        </div>
+                        <div class="col-md-2">
+                            <label for="checkout">Returning</label>
+                            <input id="checkout" class="form-control py-3" type="date" style="border-radius: 0px;">
+                            
+                        </div>
+                        <div class="col-md-2 mt-1 ">
+                            <input type="submit" class="py-3 btn btn-primary px-4" value="Search" style="border-radius: 0px;">
+                            
+                        </div>
+    
+                    </div>
+                    
+                </form>
+                
+                <div class="mt-3 row row-cols-md-3 g-4">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="images/pia.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-between">
+                                    <h6>8:00am - 9:45am</h6>
+                                    <p class="small text-muted">1hr 45min (Nonstop)</p>
+                                </div>
+                                <div class="small card-text text-start text-muted" style="margin-top: -20px;">
+                                    <p class="text-muted">Karachi (KHI) - Lahore (LHR)</p>
+                                    <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;100</h5>
+                                    <p class="text-muted" style="margin-top: -7px;">Per Traveller</p>
+                                </div>
+                            </div>
+                            <a href="#" class="card-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#piafl1">
+                                <div class="card-footer bg-white text-center">
+                                    <h6>View Details</h6>
+                                </div>
+                            </a>
+        
+                        </div>
+                    </div>
+            
+
+<div class="modal fade" id="piafl1" tabindex="-1" aria-labelledby="hotel1ModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="hotel1ModalLabel">Karachi (KHI) - Lahore (LHR)</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+                <img src="images/pia.png" width="40px" height="40px" alt="">
+                <span>Pakistan International Airlines</span>
+				<h5>8:00am - 9:45am</h5>
+                <p class="small text-muted" style="margin-top: -10px;">1hr 45min (Nonstop)</p>
+               <p class="text-muted"> 8:00am - From Karachi <br>Jinnah Intl. (KHI)</p>
+                <p class="text-muted">1h 45m flight<br>
+                    Pakistan International Airlines 302<br>
+                    Airbus A320 <br>Economy/Coach (L)</p>
+                <p class="text-muted">9:45am - To Lahore <br>Allam Iqbal Intl. (LHE)</p>
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="text-success card-title" style="font-weight: 350;">&euro;100</h3>
+                        <div class="card-text">
+                            <p class="text-muted" style="margin-top: -7px; font-size: smaller;">Per Traveller</p>
+                            <p class="text-muted" style="margin-top: -14px;">Cabin: Economy</p>
+                        <h5>Bags</h5>
+                        <ul class="text-muted">
+                            <li>Carry-on bags included. (up to 15 lbs)</li>
+                            <li>1st checked bag included. (up to 44 lbs)</li>
+                        </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-4 mb-4">
+    <div class="card shadow-sm">
+        <img src="images/pia.png" alt="" class="card-img-top">
+        <div class="card-body">
+            <div class="card-title d-flex justify-content-between">
+                <h6>8:00am - 9:45am</h6>
+                <p class="small text-muted">1hr 45min (Nonstop)</p>
+            </div>
+            <div class="small card-text text-start text-muted" style="margin-top: -20px;">
+                <p class="text-muted">Karachi (KHI) - Lahore (LHR)</p>
+                <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;100</h5>
+                <p class="text-muted" style="margin-top: -7px;">Per Traveller</p>
+            </div>
+        </div>
+        <a href="#" class="card-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#piafl2">
+            <div class="card-footer bg-white text-center">
+                <h6>View Details</h6>
+            </div>
+        </a>
+
+    </div>
+</div>
+<div class="modal fade" id="piafl2" tabindex="-1" aria-labelledby="hotel1ModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="hotel1ModalLabel">Karachi (KHI) - Lahore (LHR)</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+                <img src="images/pia.png" width="40px" height="40px" alt="">
+                <span>Pakistan International Airlines</span>
+				<h5>8:00am - 9:45am</h5>
+                <p class="small text-muted" style="margin-top: -10px;">1hr 45min (Nonstop)</p>
+               <p class="text-muted"> 8:00am - From Karachi <br>Jinnah Intl. (KHI)</p>
+                <p class="text-muted">1h 45m flight<br>
+                    Pakistan International Airlines 302<br>
+                    Airbus A320 <br>Economy/Coach (L)</p>
+                <p class="text-muted">9:45am - To Lahore <br>Allam Iqbal Intl. (LHE)</p>
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="text-success card-title" style="font-weight: 350;">&euro;100</h3>
+                        <div class="card-text">
+                            <p class="text-muted" style="margin-top: -7px; font-size: smaller;">Per Traveller</p>
+                            <p class="text-muted" style="margin-top: -14px;">Cabin: Economy</p>
+                        <h5>Bags</h5>
+                        <ul class="text-muted">
+                            <li>Carry-on bags included. (up to 15 lbs)</li>
+                            <li>1st checked bag included. (up to 44 lbs)</li>
+                        </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-4 mb-4">
+    <div class="card shadow-sm">
+        <img src="images/pia.png" alt="" class="card-img-top">
+        <div class="card-body">
+            <div class="card-title d-flex justify-content-between">
+                <h6>8:00am - 9:45am</h6>
+                <p class="small text-muted">1hr 45min (Nonstop)</p>
+            </div>
+            <div class="small card-text text-start text-muted" style="margin-top: -20px;">
+                <p class="text-muted">Karachi (KHI) - Lahore (LHR)</p>
+                <h5 class="text-success" style="font-weight: 350; margin-top: -7px;">&euro;100</h5>
+                <p class="text-muted" style="margin-top: -7px;">Per Traveller</p>
+            </div>
+        </div>
+        <a href="#" class="card-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#piafl3">
+            <div class="card-footer bg-white text-center">
+                <h6>View Details</h6>
+            </div>
+        </a>
+
+    </div>
+</div>
+<div class="modal fade" id="piafl3" tabindex="-1" aria-labelledby="hotel1ModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="hotel1ModalLabel">Karachi (KHI) - Lahore (LHR)</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+                <img src="images/pia.png" width="40px" height="40px" alt="">
+                <span>Pakistan International Airlines</span>
+				<h5>8:00am - 9:45am</h5>
+                <p class="small text-muted" style="margin-top: -10px;">1hr 45min (Nonstop)</p>
+               <p class="text-muted"> 8:00am - From Karachi <br>Jinnah Intl. (KHI)</p>
+                <p class="text-muted">1h 45m flight<br>
+                    Pakistan International Airlines 302<br>
+                    Airbus A320 <br>Economy/Coach (L)</p>
+                <p class="text-muted">9:45am - To Lahore <br>Allam Iqbal Intl. (LHE)</p>
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="text-success card-title" style="font-weight: 350;">&euro;100</h3>
+                        <div class="card-text">
+                            <p class="text-muted" style="margin-top: -7px; font-size: smaller;">Per Traveller</p>
+                            <p class="text-muted" style="margin-top: -14px;">Cabin: Economy</p>
+                        <h5>Bags</h5>
+                        <ul class="text-muted">
+                            <li>Carry-on bags included. (up to 15 lbs)</li>
+                            <li>1st checked bag included. (up to 44 lbs)</li>
+                        </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+        
+    </div>
+    </section>
+    
+    
+
+
+
+
+
+
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
